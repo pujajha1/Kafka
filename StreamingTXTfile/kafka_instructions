@@ -34,7 +34,7 @@ We have to place these files in our config directory.
 myfilesource.properties has the source file path and topic to which it will be written
 
 
-Instead of printing it on console, if you want to write in a file, follow below:
+**Instead of printing it on console, if you want to write in a file, follow below:**
 
 myfilesink.properties containg the target path along with topic
 
