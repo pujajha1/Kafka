@@ -1,0 +1,36 @@
+It reads Text file and Consume it by printing it on Consumer Tab:
+
+1. start zookeeper:
+
+   write zkserver anywhere
+   
+2. Start Kafka Server
+
+GO tO KAFKA DIRECTORY
+
+.\bin\windows\kafka-server-start.bat .\config\server.properties
+
+3. Create a topic
+
+create topics in kafka:
+cd C:\kafka_2.11-0.9.0.0\bin\windows
+
+kafka-topics.bat --create  --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test-log
+
+note: port number should be same as of zookeeper
+
+4. Start Consumer:
+cd C:\kafka_2.11-2.3.0\bin\windows
+
+kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic test-log
+
+5. Start Producer:
+
+.\bin\windows\connect-standalone.bat .\config\mystandalone.properties  .\config\myfilesource.properties
+
+Here , mystandalone.properties and myfilesource.properties is custom files which is present in this github.
+We have to place these files in our config directory.
+
+
+
+
