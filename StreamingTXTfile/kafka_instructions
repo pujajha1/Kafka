@@ -31,6 +31,14 @@ kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic test-log
 Here , mystandalone.properties and myfilesource.properties is custom files which is present in this github.
 We have to place these files in our config directory.
 
+myfilesource.properties has the source file path and topic to which it will be written
+
+
+Instead of printing it on console, if you want to write in a file, follow below:
+
+myfilesink.properties containg the target path along with topic
+
+.\bin\windows\connect-standalone.bat .\config\mystandalone.properties  .\config\myfilesource.properties .\config\myfilesink.properties
 
 
 
