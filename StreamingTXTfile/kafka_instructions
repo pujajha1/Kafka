@@ -1,4 +1,4 @@
-It reads Text file and Consume it by printing it on Consumer Tab:
+It reads Text file/CSV file and Consume it by printing it on Consumer Tab:
 
 1. start zookeeper:
 
