@@ -1,0 +1,17 @@
+open one cmd and run the following ==> This is server
+=======================================================
+cassandra -f
+
+
+open another cmd and run the following ==> this is where you create the database objects
+============================================================================================
+cd C:\Applications\Cassandra
+
+Python\python.exe apache-cassandra-3.11.2/bin/cqlsh.py localhost
+
+
+
+
+
+Zookeeper and Kafka install
+==========================================================
